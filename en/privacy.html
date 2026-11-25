@@ -10,23 +10,25 @@
 <body>
 <header class="top"><div class="wrap">
   <a class="brand" href="index.html">Rode Sports Technology<small>GOAT · Golf of AI Time</small></a>
-  <nav><a href="index.html">Home</a><a href="support.html">Support</a><a href="privacy.html" aria-current="page">Privacy Policy</a><a href="../privacy.html" lang="zh-Hant-TW">中文</a></nav>
+  <nav><a href="index.html">Home</a><a href="support.html">Support</a><a href="privacy.html" aria-current="page">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="../privacy.html" lang="zh-Hant-TW">中文</a></nav>
 </div></header>
 
 <main><div class="wrap">
   <h1>GOAT Privacy Policy</h1>
-  <p class="meta">Last updated: 22 November 2026. This is a translation of the <a href="../privacy.html">Traditional Chinese policy</a>; if the two differ, the Chinese version applies.</p>
-  <p>GOAT is a golf swing analysis app made by Rode Sports Technology Co., Ltd. The videos you film stay on your phone and are not uploaded; we upload only the four still frames and the body-tracking data used for the analysis. We do not sell data, we do not show advertising, and we do not track what you do in other apps.</p>
+  <p class="meta">Last updated: 25 November 2026. This is a translation of the <a href="../privacy.html">Traditional Chinese policy</a>; if the two differ, the Chinese version applies.</p>
+  <p>GOAT is a golf swing analysis app made by Rode Sports Technology Co., Ltd. The videos you film stay on your phone and are not uploaded. After you sign in, the four still frames and the body-tracking data used for the analysis are uploaded. When the app crashes or hits an unexpected error, it also sends a crash report that does not include your account. We do not sell data, we do not show advertising, and we do not track what you do in other apps.</p>
 
   <h2>What we collect</h2>
   <div class="table-scroll"><table>
     <tr><th>Data</th><th>What it is</th><th>Where it comes from</th></tr>
     <tr><td>Account</td><td>Email, name (provided by Google or Apple when you sign in with them), account ID</td><td>When you register or sign in</td></tr>
+    <tr><td>Sign in with Apple token</td><td>A token Apple issues to GOAT when you sign in with Apple; used only to ask Apple to revoke GOAT's sign-in access when you delete your account</td><td>When you sign in with Apple</td></tr>
     <tr><td>Golfer questionnaire</td><td>Handedness, current score range, years of play, where you mostly practise, what you most want to improve</td><td>When you fill it in (the last two are optional)</td></tr>
     <tr><td>Analysis stills</td><td>Four key frames of each analysis (address, backswing, impact, finish). They show your body and may show your face</td><td>Taken from your video when you analyse it</td></tr>
     <tr><td>Body-tracking and measurement data</td><td>Joint positions, angles, tempo, body movement and similar numbers, plus the score, the coaching advice, the type of club and the date</td><td>The analysis on your phone</td></tr>
     <tr><td>Usage records</td><td>How many times a day you use the AI coach and the lessons, which lessons you took, quiz results, your AI data-sharing consent record, and the usage and cost of the AI service</td><td>When you use the app</td></tr>
     <tr><td>Feedback reports</td><td>What you write, the voice note you record (up to 60 seconds) and the screenshots you attach (up to 3) under "Report a problem / Send feedback", plus the app version, phone model, iOS or Android version and the related analysis number or error code</td><td>When you send a report (nothing is collected if you never use it)</td></tr>
+    <tr><td>Crash and error reports</td><td>When the app crashes or hits an unexpected error: the error, where in the code it happened (the stack trace), the app version, phone model, iOS or Android version, and a randomly generated identifier (not your email or name). Not included: your email, name, videos, stills, body-tracking data, screenshots of your screen or screen recordings. Your IP address is not stored. Fields that could contain personal data, such as the file path of a video, are removed before the report is sent</td><td>Sent automatically when the app crashes or hits an error. In this first version there is no switch to turn it off; if you object, please write to our support</td></tr>
     <tr><td>Subscription status</td><td>Whether you are a paying member, the plan, the expiry date, whether you are in a trial</td><td>Apple or Google Play, and RevenueCat</td></tr>
   </table></div>
   <p><strong>What we do not collect</strong>:</p>
@@ -35,49 +37,54 @@
     <li><strong>Analyses made without signing in</strong>: you can analyse a video and see the score without an account. In that case the stills and the data stay on the phone; they are not uploaded and not sent to the AI.</li>
     <li><strong>Payment details</strong>: card and other payment details are handled by Apple (iPhone app) or Google Play (Android app). We never receive them.</li>
     <li><strong>Location, contacts, or other photos in your library</strong>: we do not read them. A video you choose from your photo library is used only for the analysis.</li>
+    <li><strong>Store ratings</strong>: when the app asks you to rate it, it uses the rating sheet of Apple or Google Play. We cannot see whether you rated the app or what rating you gave.</li>
   </ul>
-  <p><strong>Microphone permission</strong>: filming a swing also records sound; that sound stays on your phone and is not uploaded. A voice note is recorded and sent to our support only when you hold the record button in a feedback report.</p>
+  <p><strong>Microphone permission</strong>: filming a swing does not record sound. A voice note is recorded and sent to our support only when you hold the record button in a feedback report.</p>
   <p><strong>Camera permission</strong>: the app needs the camera to film your swing. You can turn it off at any time in your phone's Settings; you can still analyse videos chosen from your photo library.</p>
+  <p><strong>Notification permission</strong>: the daily lesson reminder is a local notification scheduled by the phone itself. It does not go through our servers, we do not collect a push token, and no data leaves your phone. The app asks for notification permission only after you finish your first lesson. The reminder is set to 8 pm by default; you can turn it off or change the time in 設定 (Settings). It stops by itself after 7 days without opening the app.</p>
 
   <h2>How we use the data</h2>
   <p>We use your data only to provide GOAT:</p>
   <ul>
-    <li><strong>To produce AI coaching advice</strong>: after you consent, the four stills, the camera angle, the type of club, and your handedness, score range and years of play are sent through our server to Google's Gemini AI, which writes advice suited to your level.</li>
+    <li><strong>To produce AI coaching advice</strong>: after you consent, the four stills, the camera angle, the type of club, your handedness, score range and years of play, and the state of the body-movement measurements that the result screen shows for that video (up to two for a face-on video and up to three for a down-the-line video, as plain words such as "steady", "just right" or "low", never numbers; a measurement that could not be taken reliably or is not shown is not sent) are sent through our server to Google's Gemini AI, which writes advice suited to your level.</li>
     <li><strong>To keep your history</strong>: so you can look back at earlier analyses and see your progress.</li>
     <li><strong>To arrange lessons</strong>: the next lesson is recommended from your analysis results and your lesson progress.</li>
-    <li><strong>To manage paid features</strong>: to check whether you are a paying member and to count the free plan's daily uses.</li>
+    <li><strong>To manage paid features</strong>: to check whether you are a paying member and to count each plan's uses.</li>
     <li><strong>To handle your reports</strong>: to read the problem you reported, answer you and fix the app. Voice notes and screenshots are seen only by our support and development staff; they are not sent to the AI and not used for anything else.</li>
     <li><strong>To maintain and improve the service</strong>: to find errors, control the cost of the AI service and improve the accuracy of the analysis. If we ever want to use your data to train our own analysis models, we will ask for your consent first.</li>
   </ul>
   <p>We do <strong>not</strong> sell your data, use it for advertising, or track what you do in other apps or websites.</p>
-  <p><strong>Consent to AI data sharing</strong>: before your first analysis the app explains which data goes to Google Gemini, and you decide whether to agree. You can withdraw consent at any time in Settings → AI Data Sharing. The AI coach is then paused; body tracking and scores keep working.</p>
+  <p><strong>Consent to AI data sharing</strong>: before your first analysis the app explains which data goes to Google Gemini, and you decide whether to agree. You can withdraw consent at any time in 設定 (Settings) → AI 資料分享 (AI Data Sharing). The AI coach is then paused; body tracking and scores keep working.</p>
 
   <h2>Outside services that handle data</h2>
   <p>We use the services below to provide the app. They may use the data only to provide those services:</p>
   <div class="table-scroll"><table>
     <tr><th>Service</th><th>Purpose</th><th>Data it handles</th></tr>
     <tr><td>Supabase</td><td>Sign-in, database, storage of stills</td><td>Account, questionnaire, stills, analysis results, usage records</td></tr>
-    <tr><td>Google Gemini</td><td>Producing AI coaching advice</td><td>The four stills, camera angle, type of club, handedness, score range, years of play (not your name or email, and not the measured body-tracking numbers)</td></tr>
+    <tr><td>Google Gemini</td><td>Producing AI coaching advice</td><td>The four stills, camera angle, type of club, handedness, score range, years of play, and the state of the measurements shown on the result screen as plain words (up to two for a face-on video, up to three for a down-the-line video; not sent if not reliable or not shown) (not your name or email, and not the measured body-tracking numbers)</td></tr>
     <tr><td>Sign in with Google, Sign in with Apple</td><td>Signing in with an account you already have</td><td>The email and name you agree to share</td></tr>
     <tr><td>Apple App Store</td><td>Subscription payments for the iPhone app</td><td>Payment details (kept by Apple)</td></tr>
     <tr><td>Google Play</td><td>Subscription payments for the Android app</td><td>Payment details (kept by Google)</td></tr>
     <tr><td>RevenueCat</td><td>Managing subscription status</td><td>Account ID, purchase records</td></tr>
     <tr><td>Resend</td><td>Sending the "new report" notice to our support mailbox</td><td>The text of the report, device information, account ID, and links to the voice note and screenshots (the links stop working after 7 days)</td></tr>
+    <tr><td>Sentry</td><td>Receiving crash and error reports so that we can find and fix crashes</td><td>Crash and error reports: the error, where in the code it happened, app version, phone model, operating system version, a random identifier (not your email, name, videos, stills or body-tracking data; your IP address is not stored)</td></tr>
   </table></div>
   <p>We use a paid plan of Google Gemini. Under Google's terms, data sent on that plan is not used to train Google's AI models.</p>
   <p>Data is encrypted in transit (HTTPS) between your phone and our servers, and between our servers and the services above.</p>
-  <p>Apart from the table above, we disclose your data only when the law requires it (for example a lawful request from a court or a competent authority). The servers of these services may be located outside Taiwan.</p>
+  <p>Apart from the table above, we disclose your data only when the law requires it (for example a lawful request from a court or a competent authority). The servers of these services may be located outside Taiwan. Sentry is a company in the United States, and crash and error reports are stored in the United States. Sentry only processes these reports on our behalf; they are not sold and not used for advertising or for tracking across apps.</p>
 
   <h2>Retention and deletion</h2>
   <div class="table-scroll"><table>
     <tr><th>Data</th><th>How long it is kept</th></tr>
     <tr><td>The text record of an analysis (score, advice, date)</td><td>Until you delete that record or your account</td></tr>
-    <tr><td>Analysis stills and body-tracking data</td><td>The free plan keeps the 3 most recent analyses, the paid plan up to 30. When a free-plan user saves a 4th, the stills of the oldest are deleted automatically and its text record stays. After moving from the paid plan back to the free plan, stills beyond the 3 most recent are hidden first, and the next time you save an analysis the app asks you to confirm before deleting them</td></tr>
+    <tr><td>Analysis stills and body-tracking data</td><td>The Free plan keeps the 3 most recent analyses, Plus the 30 most recent and Pro the 100 most recent. When a Free user saves a 4th, the stills of the oldest are deleted automatically and its text record stays. After a move to a lower plan, stills beyond the new plan's number are hidden first, and the next time you save an analysis the app asks you to confirm before deleting them. On Plus and Pro, when the limit is full the app asks you to choose one analysis whose stills to delete so the new stills can be kept</td></tr>
     <tr><td>Voice notes and screenshots of reports</td><td>Deleted automatically after 180 days; deleted at once when you delete your account</td></tr>
     <tr><td>Text and device information of reports</td><td>Until you delete your account</td></tr>
+    <tr><td>Crash and error reports</td><td>Kept at Sentry for up to 90 days, then deleted automatically</td></tr>
+    <tr><td>Sign in with Apple token</td><td>Until you delete your account; deleted with it</td></tr>
     <tr><td>Account, questionnaire, lesson progress, usage records</td><td>Until you delete your account</td></tr>
   </table></div>
-  <p><strong>Deleting your account</strong>: you can delete it at any time in the app under Settings → Delete Account. Your account, analysis history, stills in the cloud, questionnaire, lesson progress and usage records are then deleted permanently, together with your customer record at RevenueCat. This cannot be undone. De-identified statistics of AI usage are kept to control costs.</p>
+  <p><strong>Deleting your account</strong>: you can delete it at any time in the app under 設定 (Settings) → 刪除帳號 (Delete Account). Your account, analysis history, stills in the cloud, questionnaire, lesson progress and usage records are then deleted permanently, together with your customer record at RevenueCat. This cannot be undone. De-identified statistics of AI usage are kept to control costs. Purchase records kept by Apple and Google Play are not held by us, and we cannot delete them. If you signed in with Apple, we also ask Apple to revoke GOAT's sign-in access when you delete your account, so GOAT no longer appears in your iPhone's list of apps using Sign in with Apple. If Apple cannot be reached at that moment, GOAT may stay in that list. You can remove it yourself in iPhone Settings → your name → Sign-In & Security → Sign in with Apple, then choose GOAT and tap Stop Using Sign in with Apple.</p>
   <p><strong>Deleting your account does not cancel a subscription</strong>: if you are a paying member, cancel the subscription first, otherwise Apple or Google Play keeps charging you. iPhone: Settings → your name → Subscriptions. Android: open Google Play → your profile picture → Payments &amp; subscriptions → Subscriptions → GOAT → Cancel subscription.</p>
   <p>You can also ask us to delete your account without installing the app: see <a href="delete-account.html">How to delete your account</a>.</p>
   <p>You can also delete single analyses in your history; their stills and data are deleted with them.</p>
@@ -86,7 +93,7 @@
   <p>Under Taiwan's Personal Data Protection Act you may, for your own data: ask what we hold or view it, request a copy, supplement or correct it, ask us to stop collecting, processing or using it, and ask for it to be deleted. Most of this can be done directly in the app (edit the questionnaire, withdraw AI data-sharing consent, delete records, delete your account). For anything else, write to us and we will respond within 30 days.</p>
 
   <h2>Children</h2>
-  <p>GOAT is not designed for children under 13. Users under 18 should use it with the consent of a parent or guardian. If you find that we have received a child's data without consent, please tell us so we can delete it.</p>
+  <p>Please do not use GOAT if you are under 13. If you are under 18, please use it only with the consent of a parent or guardian. If you find that we have received a child's data without consent, please tell us so we can delete it.</p>
 
   <h2>Changes to this policy</h2>
   <p>We may change this policy when features or the law change. For important changes (for example collecting a new type of data) we will notify you in the app. The date of the last update is shown at the top of this page.</p>
